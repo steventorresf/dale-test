@@ -1,0 +1,38 @@
+<div>
+    <h1>Listado de productos</h1>
+    <div class="text-right">
+        <button mat-raised-button color="primary" (click)="abrirDialogo(0)">Nuevo</button>
+    </div>
+    <div class="mt-sm">
+        <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <!-- Nombre Column -->
+            <ng-container matColumnDef="nombre">
+                <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.nombre}} </mat-cell>
+            </ng-container>
+
+            <!-- ValorUnitario Column -->
+            <ng-container matColumnDef="valorUnitario">
+                <mat-header-cell *matHeaderCellDef> Valor Unitario </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.valorUnitario}} </mat-cell>
+            </ng-container>
+
+            <!-- Acción Column -->
+            <ng-container matColumnDef="accion">
+                <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                <mat-cell *matCellDef="let element">
+                    <button mat-mini-fab color="primary"
+                        matTooltip="Editar"
+                        [matTooltipPosition]="'right'"
+                        aria-label="Example icon button with a menu icon"
+                        (click)="abrirDialogo(element.productoId)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+    </div>
+</div>

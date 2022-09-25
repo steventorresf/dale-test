@@ -1,0 +1,29 @@
+<div>
+    <form [formGroup]="myForm">
+        <p>
+            <mat-form-field class="mr-sm" appearance="outline">
+                <mat-label>Producto</mat-label>
+                <mat-select formControlName="producto" (ngModelChange)="changeProducto()">
+                    <mat-option>Ninguno</mat-option>
+                    <mat-option *ngFor="let item of listProductos" [value]="item">{{item.nombre}}</mat-option>
+                  </mat-select>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field class="mr-sm" appearance="outline">
+                <mat-label>Cantidad</mat-label>
+                <input matInput placeholder="Digite cantidad" formControlName="cantidad">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field class="mr-sm" appearance="outline">
+                <mat-label>V. Unitario</mat-label>
+                <input matInput placeholder="Digite valor" formControlName="valorUnitario">
+            </mat-form-field>
+        </p>
+        <div class="text-center">
+            <button mat-raised-button color="primary" [disabled]="myForm.invalid" (click)="agregar()">Agregar</button>
+            <button class="ml-sm" mat-raised-button (click)="cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>

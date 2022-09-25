@@ -1,0 +1,37 @@
+<div class="mb-md">
+    <h4 *ngIf="id == 0">Crear cliente</h4>
+    <h4 *ngIf="id > 0">Actualizar cliente</h4>
+</div>
+<form [formGroup]="myForm">
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>C&eacute;dula</mat-label>
+            <input matInput placeholder="Digite cédula" formControlName="cedula">
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Digite nombre" formControlName="nombre">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Apellido</mat-label>
+            <input matInput placeholder="Digite apellido" formControlName="apellido">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Tel&eacute;fono</mat-label>
+            <input matInput placeholder="Digite teléfono" formControlName="telefono">
+        </mat-form-field>
+    </p>
+
+    <div class="text-center">
+        <button mat-raised-button color="primary" [disabled]="myForm.invalid" (click)="guardar()">Guardar</button>
+        <button class="ml-sm" mat-raised-button (click)="cancelar()">Cancelar</button>
+    </div>
+</form>

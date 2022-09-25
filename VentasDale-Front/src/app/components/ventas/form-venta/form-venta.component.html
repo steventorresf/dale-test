@@ -1,0 +1,98 @@
+<div class="mb-sm">
+    <h4 *ngIf="formEdit">Factura de venta</h4>
+    <h4 *ngIf="!formEdit">Factura de venta # {{data.id}}</h4>
+</div>
+<div>
+    <form [formGroup]="myForm">
+        <p>
+            <mat-form-field class="mr-md"  appearance="outline">
+                <mat-label>Elija fecha</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="fecha">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <ng-container *ngIf="mostrar.busquedaCedula">
+                <mat-form-field class="mr-sm" appearance="outline">
+                    <mat-label>Busqueda por c&eacute;dula</mat-label>
+                    <input matInput placeholder="Digite cédula" formControlName="cedulaBusqueda">
+                </mat-form-field>
+                <button mat-raised-button color="primary" [disabled]="!this.myForm.get('cedulaBusqueda')?.value" (click)="getClienteByCedula()">Buscar</button>
+            </ng-container>            
+        </p>
+        <div class="mt-sm">
+            <h5>Datos del cliente</h5>
+        </div>
+        <p>
+            <mat-form-field class="mr-sm" appearance="outline">
+                <mat-label>C&eacute;dula</mat-label>
+                <input matInput placeholder="Digite cédula" formControlName="cedula">
+            </mat-form-field>
+            <mat-form-field class="mr-sm" appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input matInput placeholder="" formControlName="nombre">
+            </mat-form-field>
+            <mat-form-field class="mr-sm" appearance="outline">
+                <mat-label>Apellido</mat-label>
+                <input matInput placeholder="" formControlName="apellido">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Tel&eacute;fono</mat-label>
+                <input matInput placeholder="" formControlName="telefono">
+            </mat-form-field>
+        </p>
+    </form>
+</div>
+
+<div>
+    <div class="text-right" *ngIf="mostrar.botonAgregar">
+        <button mat-raised-button color="primary" (click)="abrirDialogo()">Agregar</button>
+    </div>
+    <div class="mt-sm mb-md">
+        <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <!-- Nombre Column -->
+            <ng-container matColumnDef="nombre">
+                <mat-header-cell *matHeaderCellDef> Descripci&oacute;n </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.nombre}} </mat-cell>
+            </ng-container>
+
+            <!-- Cantidad Column -->
+            <ng-container matColumnDef="cantidad">
+                <mat-header-cell *matHeaderCellDef> Cantidad </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.cantidad}} </mat-cell>
+            </ng-container>
+
+            <!-- ValorUnitario Column -->
+            <ng-container matColumnDef="valorUnitario">
+                <mat-header-cell *matHeaderCellDef> V. Unitario </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.valorUnitario}} </mat-cell>
+            </ng-container>
+
+            <!-- ValorTotal Column -->
+            <ng-container matColumnDef="valorTotal">
+                <mat-header-cell *matHeaderCellDef> V. Total </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.valorTotal}} </mat-cell>
+            </ng-container>
+
+            <!-- Acción Column -->
+            <ng-container matColumnDef="accion">
+                <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                <mat-cell *matCellDef="let element">
+                    <button *ngIf="mostrar.botonQuitar" mat-mini-fab color="primary" (click)="quitarProducto(element.id)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+    </div>
+    <div class="text-center mt-md" *ngIf="formEdit">
+        <button mat-raised-button color="primary" [disabled]="myForm.invalid || dataSource.length == 0" (click)="guardarFacturaVenta()">Guardar</button>
+        <button class="ml-md" mat-raised-button (click)="cancelar()">Cancelar</button>
+    </div>
+    <div class="text-center mt-md" *ngIf="!formEdit">
+        <button mat-raised-button color="primary" (click)="cancelar()">Cerrar</button>
+    </div>
+</div>

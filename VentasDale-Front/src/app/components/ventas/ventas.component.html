@@ -1,0 +1,56 @@
+<div>
+    <h1>Listado de ventas</h1>
+    <div class="text-right">
+        <button mat-raised-button color="primary" (click)="abrirDialogo(0, 0)">Nuevo</button>
+    </div>
+    <div class="mt-sm">
+        <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <!-- Id Column -->
+            <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef> # Venta </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.ventaId}} </mat-cell>
+            </ng-container>
+
+            <!-- Fecha Column -->
+            <ng-container matColumnDef="fecha">
+                <mat-header-cell *matHeaderCellDef> Fecha </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.fechaVenta.toString().substring(0, 10)}} </mat-cell>
+            </ng-container>
+
+            <!-- Cedula Column -->
+            <ng-container matColumnDef="cedula">
+                <mat-header-cell *matHeaderCellDef> C&eacute;dula </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.cedula}} </mat-cell>
+            </ng-container>
+
+            <!-- Nombre Column -->
+            <ng-container matColumnDef="nombre">
+                <mat-header-cell *matHeaderCellDef> Cliente </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.nombre}} {{element.apellido}} </mat-cell>
+            </ng-container>
+
+            <!-- Telefono Column -->
+            <ng-container matColumnDef="valorTotal">
+                <mat-header-cell *matHeaderCellDef> V. Total </mat-header-cell>
+                <mat-cell *matCellDef="let element"> {{element.total}} </mat-cell>
+            </ng-container>
+
+            <!-- Acción Column -->
+            <ng-container matColumnDef="accion">
+                <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                <mat-cell *matCellDef="let element">
+                    <button mat-mini-fab color="primary"
+                        matTooltip="Ver"
+                        [matTooltipPosition]="'right'"
+                        aria-label="Example icon button with a menu icon"
+                        (click)="abrirDialogo(element.ventaId, 0)">
+                        <mat-icon>explore</mat-icon>
+                    </button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+    </div>
+</div>
