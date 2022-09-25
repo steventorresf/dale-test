@@ -1,0 +1,17 @@
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\bin\Debug\net6.0\VentasDale.Persistence.deps.json
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\bin\Debug\net6.0\VentasDale.Persistence.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\bin\Debug\net6.0\VentasDale.Persistence.pdb
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\bin\Debug\net6.0\VentasDale.Domain.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\bin\Debug\net6.0\VentasDale.Persistence.Interfaces.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\bin\Debug\net6.0\VentasDale.Domain.pdb
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\bin\Debug\net6.0\VentasDale.Persistence.Interfaces.pdb
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\VentasDale.Persistence.csproj.AssemblyReference.cache
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\VentasDale.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\VentasDale.Persistence.AssemblyInfoInputs.cache
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\VentasDale.Persistence.AssemblyInfo.cs
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\VentasDale.Persistence.csproj.CoreCompileInputs.cache
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\VentasDale.Persistence.csproj.CopyComplete
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\VentasDale.Persistence.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\refint\VentasDale.Persistence.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\VentasDale.Persistence.pdb
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Persistence\obj\Debug\net6.0\ref\VentasDale.Persistence.dll

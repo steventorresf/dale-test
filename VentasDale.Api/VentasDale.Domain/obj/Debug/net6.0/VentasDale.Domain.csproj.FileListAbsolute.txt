@@ -1,0 +1,12 @@
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\bin\Debug\net6.0\VentasDale.Domain.deps.json
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\bin\Debug\net6.0\VentasDale.Domain.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\bin\Debug\net6.0\VentasDale.Domain.pdb
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\obj\Debug\net6.0\VentasDale.Domain.csproj.AssemblyReference.cache
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\obj\Debug\net6.0\VentasDale.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\obj\Debug\net6.0\VentasDale.Domain.AssemblyInfoInputs.cache
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\obj\Debug\net6.0\VentasDale.Domain.AssemblyInfo.cs
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\obj\Debug\net6.0\VentasDale.Domain.csproj.CoreCompileInputs.cache
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\obj\Debug\net6.0\VentasDale.Domain.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\obj\Debug\net6.0\refint\VentasDale.Domain.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\obj\Debug\net6.0\VentasDale.Domain.pdb
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Domain\obj\Debug\net6.0\ref\VentasDale.Domain.dll

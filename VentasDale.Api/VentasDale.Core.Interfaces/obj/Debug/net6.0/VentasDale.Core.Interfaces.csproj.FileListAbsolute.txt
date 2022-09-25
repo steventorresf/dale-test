@@ -1,0 +1,15 @@
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\bin\Debug\net6.0\VentasDale.Core.Interfaces.deps.json
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\bin\Debug\net6.0\VentasDale.Core.Interfaces.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\bin\Debug\net6.0\VentasDale.Core.Interfaces.pdb
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\bin\Debug\net6.0\VentasDale.Domain.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\bin\Debug\net6.0\VentasDale.Domain.pdb
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\VentasDale.Core.Interfaces.csproj.AssemblyReference.cache
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\VentasDale.Core.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\VentasDale.Core.Interfaces.AssemblyInfoInputs.cache
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\VentasDale.Core.Interfaces.AssemblyInfo.cs
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\VentasDale.Core.Interfaces.csproj.CoreCompileInputs.cache
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\VentasDale.Core.Interfaces.csproj.CopyComplete
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\VentasDale.Core.Interfaces.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\refint\VentasDale.Core.Interfaces.dll
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\VentasDale.Core.Interfaces.pdb
+C:\GitRepository\VentasST_Dale\VentasDale.Api\VentasDale.Core.Interfaces\obj\Debug\net6.0\ref\VentasDale.Core.Interfaces.dll

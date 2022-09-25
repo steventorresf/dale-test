@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VentasDale.Core.Interfaces\VentasDale.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\VentasDale.Persistence.Interfaces\VentasDale.Persistence.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
